@@ -1,0 +1,20 @@
+
+spring:
+  mail:
+    port: 465
+    host: smtp.exmail.qq.com
+    username: QQ邮箱
+    password: 密码
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            trust: smtp.exmail.qq.com
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            port: 465
+          starttls:
+            enable: true
+            required: true
